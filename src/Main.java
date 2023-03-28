@@ -4,8 +4,12 @@ public class Main {
     public static void main(String[] args) {
         year();
         getClientOS();
-        task3();
+        int days = task3(55);
+        System.out.println("Доставка займет " + days);
     }
+
+
+
     public static void year() {
 
         int leapYear = 2021;
@@ -36,30 +40,16 @@ public class Main {
             System.out.println("установите обычное приложение");
         }
     }
-    public static int task3() {
-        int deliveryDistance = 95;
+    public static int task3(int deliveryDistance) {
         int deliveryDay = 1;
         if (deliveryDistance > 20) {
             deliveryDay++;
-            System.out.println("Потребуется дней: " + deliveryDay);
         }
         if (deliveryDistance > 60) {
             deliveryDay++;
-            System.out.println("Потребуется дней: " + deliveryDay);
-        }
-
-        if (deliveryDistance > 100) {
-        } else {
-            System.out.println(100 + " км доставки нет");
-        }
-        if (deliveryDistance > 20) {
-        deliveryDay++;
-        }
-        if (deliveryDistance > 60) {
-        deliveryDay++;
         }
         return deliveryDay;
-        }}
-
+    }
+    }
 
 
